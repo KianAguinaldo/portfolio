@@ -1,0 +1,45 @@
+# Environment & Secrets
+.env
+config/config.php
+.env.local
+.env.backup
+.env.*.local
+
+# Setup wizard - local XAMPP tool only, never deploy
+setup.php
+
+# Backups (local only)
+_backups/
+
+# Uploaded files (exclude actual uploads from git)
+uploads/projects/*
+!uploads/projects/.gitkeep
+!uploads/projects/.htaccess
+uploads/certificates/*
+!uploads/certificates/.gitkeep
+!uploads/certificates/.htaccess
+uploads/resume/*
+!uploads/resume/.gitkeep
+!uploads/resume/.htaccess
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log
+
+# SQL backups and dumps (local only)
+*.sql.bak
+dump.sql
+
+# PHP
+*.phar
+vendor/
